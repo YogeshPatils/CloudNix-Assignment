@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="container d-grid">
+        <section id="page-1" class="my-5 p-4 rounded shadow bg-custom">
+            <div class="container p-4 rounded shadow bg-custom" style="max-width: 1140px; width: 100%;">
+
+                <button type="button" id="start" class="btn btn-outline-custom btn-lg">Let's Get Started with Your
+                    E-Store</button>
+            </div>
+        </section>
+        <section id="page-2" class="container my-5 p-4 rounded shadow bg-custom hide overlay">
+
+            <div class="container p-5">
+                <h1 class="mb-4 fw-bold">Apply a theme</h1>
+                <div class="row justify-content-center g-4">
+                    <article class="col-12 col-sm-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/theme1.jpeg" class="card-img-top mb-4" alt="Style Theme">
+                            <div class="card-body">
+                                <h2 class="card-title mb-4">
+                                    Bags theme <small class="text-muted fs-6">[recommended]</small>
+                                </h2>
+                                <button class="btn btn-outline-custom btn-lg w-100" data-theme-name="Bags Theme">Apply</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-sm-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/theme2.jpg" class="card-img-top mb-4" alt="Flex Theme">
+                            <div class="card-body">
+                                <h2 class="card-title mb-4">Flex theme</h2>
+                                <button class="btn btn-outline-custom btn-lg w-100" data-theme-name="Flex theme">Apply</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-sm-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/theme3.jpeg" class="card-img-top mb-4" alt="Chic Theme">
+                            <div class="card-body">
+                                <h2 class="card-title mb-4">Chic theme</h2>
+                                <button class="btn btn-outline-custom btn-lg w-100" data-theme-name="Chic theme">Apply</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="text-end mt-4">
+                    <button type="button" id="next-btn-page-3" class="btn btn-custom  me-md-2 w-25">Next</button>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="page-3" class="container-fluid py-5 my-5 p-4 rounded shadow bg-custom hide">
+            <div class="container p-4">
+                <div class="row align-items-center g-4">
+
+                    <!-- Left Side: Form -->
+                    <div class="col-12 col-lg-6">
+                        <h2 class="mb-4 fw-bold">Let’s add a type, Category and <br>Sub-category</h2>
+                        <form action="" method="post">
+                            <div class="mb-5">
+                                <label for="id_type" class="form-label fw-bold">Product type</label>
+                                <input type="text" class="form-control" name="type" id="id_type"
+                                    aria-describedby="emailHelp" placeholder="eg - Electronics">
+                            </div>
+                            <div class="mb-5">
+                                <label for="id_category" class="form-label fw-bold">Product category (optional)</label>
+                                <input type="text" name="category" id="id_category" class="form-control"
+                                    aria-describedby="emailHelp" placeholder="eg - Smart phone">
+                            </div>
+                            <div class="mb-5">
+                                <label for="id_sub_category" class="form-label fw-bold">Product subcategory
+                                    (optional)</label>
+                                <input type="text" name="subcategory" aria-describedby="emailHelp" class="form-control"
+                                    id="id_sub_category" placeholder="eg - 5G">
+                            </div>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button type="button"
+                                    class="back-btn-to-page-2 btn btn-outline-custom w-25">Back</button>
+                                <button type="button"
+                                    class="next-btn-to-page-4 btn btn-custom  me-md-2 w-25">Next</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Right Side: Image -->
+                    <div class="col-12 col-lg-6">
+                        <img src="img/product-flow.png" class="img-fluid rounded shadow-sm" alt="Product Flow Diagram">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="page-4" class="container-fluid py-5 my-5 p-4 rounded shadow bg-custom hide">
+            <div class="container">
+                <div class="row g-4">
+
+                    <!-- Left Side: Scrollable Form -->
+                    <div class="col-12 col-lg-6">
+                        <form class="p-4 bg-white rounded shadow-sm" style="max-height: 550px; overflow-y: auto;">
+                            <h4 class="fw-bold mb-4">Lets add your first product</h4>
+
+                            <fieldset class="mb-4">
+                                <legend class="fs-5 mb-3">Basic Details</legend>
+
+                                <div class="mb-3">
+                                    <label for="productName" class="form-label">Product name</label>
+                                    <input type="text" class="form-control" id="productName"
+                                        placeholder="eg: memory book">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="productDesc" class="form-label">Product Description</label>
+                                    <textarea class="form-control" id="productDesc" rows="3"
+                                        placeholder="e.g., Large soft-bound memory keeper"></textarea>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Add image(s)</label>
+                                    <input type="file" id="productImage" class="form-control" multiple>
+                                </div>
+
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="radio" name="skuOption" id="autoSKU">
+                                    <label class="form-check-label" for="autoSKU">We generate a new SKU code</label>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio" name="skuOption" id="manualSKU">
+                                    <label class="form-check-label" for="manualSKU">Add product SKU (HSN/SAC)</label>
+                                </div>
+
+                                <input type="text" class="form-control mb-3" placeholder="e.g. #PROD001">
+                            </fieldset>
+
+                            <fieldset>
+                                <legend class="fs-5 mb-3">Pricing Details</legend>
+
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <label class="form-label">MRP (incl. of GST)</label>
+                                        <input type="number" class="form-control" id="productMRP"
+                                            placeholder="e.g. 499">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="form-label">List Price</label>
+                                        <input type="number" class="form-control" id="productListPrice"
+                                            placeholder="e.g. 450">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="form-label">Discount (%)</label>
+                                        <input type="number" class="form-control" id="productDiscount"
+                                            placeholder="e.g. 10">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="form-label">GST Rate</label>
+                                        <input type="number" class="form-control" id="productGST" placeholder="e.g. 18">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="form-label">Shipping (₹)</label>
+                                        <input type="number" class="form-control" id="productShipping"
+                                            placeholder="e.g. 40">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="form-label">Stock</label>
+                                        <input type="number" class="form-control" id="productStock"
+                                            placeholder="e.g. 100">
+                                    </div>
+                                </div>
+                            </fieldset>
+
+
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                                <button type="button"
+                                    class="back-btn-to-page-3 btn btn-outline-custom w-25">Back</button>
+                                <button type="button"
+                                    class="next-btn-to-page-5 btn btn-custom  me-md-2 w-25">Next</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Right Side: Live Preview -->
+                    <div class="col-12 col-lg-6">
+                        <aside
+                            class="p-4 bg-white rounded shadow-sm text-center h-100 d-flex flex-column justify-content-center">
+                            <img id="productPreviewImage" src="" alt="Product preview" class="mb-3 rounded"
+                                style="max-height: 180px;">
+                            <h5 id="productTitle" class="fw-semibold">Product title</h5>
+
+                            <!-- Product Description Box -->
+                            <div class="description-box p-3 mb-3 rounded bg-light">
+                                <p id="productDescription" class="text-muted small mb-0">Brief description of the
+                                    product. Will auto-update based on form input.</p>
+                            </div>
+
+                            <!-- Price Box -->
+                            <div class="price-box p-3 mb-3 rounded">
+                                <p id="originalPrice" class="text-muted small mb-0">
+                                    <span class="text-decoration-line-through">₹499</span>
+                                    <!-- Overlined original price -->
+                                </p>
+                                <p id="productPrice" class="fw-bold text-success mb-0">₹450</p> <!-- Offer price -->
+                            </div>
+                        </aside>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="page-5" class="container-fluid py-5 my-5 p-4 rounded shadow bg-custom hide">
+            <div class="container my-5">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h3 class="mb-2">Let’s Customize Your Shopnix Store</h3>
+                        <h4 class="text-secondary mb-4">Set Up the Store</h4>
+                        <div class="row">
+                            <!-- Left: Form -->
+                            <div class="col-md-8 border-end pe-4">
+                                <div class="row mb-4">
+                                    <div class="col-md-6">
+                                        <label for="logoUpload" class="form-label fw-semibold">Add Logo</label>
+                                        <input type="file" class="form-control" id="logoUpload" accept=".jpg,.png,.webp">
+                                        <small class="text-muted d-block mt-1">Supported: JPG, PNG & WEBP<br>Size: 100×300px</small>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="faviconUpload" class="form-label fw-semibold">Add Favicon</label>
+                                        <input type="file" class="form-control" id="faviconUpload" accept=".ico">
+                                        <small class="text-muted d-block mt-1">Supported: ICO only<br>Size: 32×32px</small>
+                                    </div>
+                                </div>
+        
+                                <div class="mb-4">
+                                    <label for="storeName" class="form-label fw-semibold">Store Name</label>
+                                    <input type="text" class="form-control" id="storeName" placeholder="Enter store name" value="Books store">
+                                </div>
+        
+                                <div class="mb-4">
+                                    <label for="storeTitle" class="form-label fw-semibold">Store Title</label>
+                                    <input type="text" class="form-control" id="storeTitle" placeholder="Enter store title" value="Trial online store">
+                                </div>
+        
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" id="addSupport" checked>
+                                    <label class="form-check-label" for="addSupport">Add support details</label>
+                                </div>
+        
+                                <div id="supportDetails">
+                                    <div class="mb-4">
+                                        <label for="supportEmail" class="form-label">Support E-mail address</label>
+                                        <input type="email" class="form-control" id="supportEmail" placeholder="support@example.com" value="praveen@cloudnix.com">
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="supportPhone" class="form-label">Support Phone Number</label>
+                                        <input type="text" class="form-control" id="supportPhone" placeholder="9999999999" value="9999999999">
+                                    </div>
+                                </div>
+        
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                                    <button type="button" class="back-btn-to-page-4 btn btn-outline-custom w-25">Back</button>
+                                    <button type="button" class="finish-btn btn btn-custom me-md-2 w-25">Review and Finish</button>
+                                </div>
+                            </div>
+        
+                            <!-- Right: Preview -->
+                            <div class="col-md-4 ps-4">
+                                <div class="border p-3 rounded bg-light">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img id="storeLogoPreview" src="" alt="Store Logo" class="me-3 rounded" style="max-height: 80px; max-width: 80px;">
+                                        <div>
+                                            <p id="previewStoreName" class="mb-1 fw-bold fs-5">Books store</p>
+                                            <small id="previewStoreTitle" class="text-muted">Trial online store</small>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p class="mb-1"><i class="bi bi-envelope me-2"></i><span id="previewEmail">praveen@cloudnix.com</span></p>
+                                    <p class="mb-0"><i class="bi bi-telephone me-2"></i><span id="previewPhone">9999999999</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+           
+        </section>
+        <section id="page-6" class="container-fluid py-5 my-5 p-4 rounded shadow bg-custom hide">
+            <div class="container my-5">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h3 class="mb-2">Review Your Shopnix Store</h3>
+                        <h4 class="text-secondary mb-4">Store Preview</h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img id="storeLogoPage6" src="" alt="Store Logo" class="me-3 rounded" style="max-height: 80px; max-width: 80px;">
+                                    <div>
+                                        <p id="previewStoreNamePage6" class="mb-1 fw-bold fs-5">Store Name</p>
+                                        <small id="previewStoreTitlePage6" class="text-muted">Store Title</small>
+                                    </div>
+                                </div>
+                                <hr>
+                                <p class="mb-1"><i class="bi bi-envelope me-2"></i><span id="previewEmailPage6">Email</span></p>
+                                <p class="mb-0"><i class="bi bi-telephone me-2"></i><span id="previewPhonePage6">Phone Number</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+
+        
+        
+
+
+
+
+    </main>
+
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.7.1.js"></script>
+<script src="js/index.js"></script>
+
+</html>
